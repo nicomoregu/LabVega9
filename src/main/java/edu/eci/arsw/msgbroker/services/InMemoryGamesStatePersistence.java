@@ -24,7 +24,6 @@ import org.springframework.stereotype.Service;
  *
  * @author hcadavid
  */
-@Service
 public class InMemoryGamesStatePersistence implements GameStatePersistence{
     
     private final ConcurrentHashMap<Integer,HangmanGame> gamesState;
