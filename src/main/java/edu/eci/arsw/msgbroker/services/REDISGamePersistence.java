@@ -35,7 +35,8 @@ public class REDISGamePersistence implements GameStatePersistence{
     public synchronized void addLetter(int gameid, char c) throws GameNotFoundException{
         Jedis jedis = JedisUtil.getPool().getResource(); 
         try {
-            HangmanGame juegoActual = getGame(gameid);
+            Map<String, String> partida = jedis.hgetAll("partida:" + gameid);        
+            HangmanGame juegoActual = new HangmanGame(partida.get("palabra"), partida.get("adivinado"), partida.get("ganador"), partida.get("estado").equals("true")?true:false);
             juegoActual.addLetter(c);
 
             Map<String, String> userProperties = new HashMap<String, String>();
