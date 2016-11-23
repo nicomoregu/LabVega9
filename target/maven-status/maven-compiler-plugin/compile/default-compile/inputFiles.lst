@@ -1,0 +1,10 @@
+/home/local/LABINFO/2099340/Desktop/REDIS_Exercise_Hangman_Backend/src/main/java/edu/eci/arsw/msgbroker/services/GameStatePersistence.java
+/home/local/LABINFO/2099340/Desktop/REDIS_Exercise_Hangman_Backend/src/main/java/edu/eci/arsw/msgbroker/model/HangmanGame.java
+/home/local/LABINFO/2099340/Desktop/REDIS_Exercise_Hangman_Backend/src/main/java/edu/eci/arsw/msgbroker/GamesResourceController.java
+/home/local/LABINFO/2099340/Desktop/REDIS_Exercise_Hangman_Backend/src/main/java/edu/edi/arsw/msgbroker/util/JedisUtil.java
+/home/local/LABINFO/2099340/Desktop/REDIS_Exercise_Hangman_Backend/src/main/java/edu/eci/arsw/msgbroker/services/GameServices.java
+/home/local/LABINFO/2099340/Desktop/REDIS_Exercise_Hangman_Backend/src/main/java/edu/eci/arsw/msgbroker/WebsocketsMsbrokerExampleApplication.java
+/home/local/LABINFO/2099340/Desktop/REDIS_Exercise_Hangman_Backend/src/main/java/edu/eci/arsw/msgbroker/services/GameNotFoundException.java
+/home/local/LABINFO/2099340/Desktop/REDIS_Exercise_Hangman_Backend/src/main/java/edu/eci/arsw/msgbroker/services/GameCreationException.java
+/home/local/LABINFO/2099340/Desktop/REDIS_Exercise_Hangman_Backend/src/main/java/edu/eci/arsw/msgbroker/WebSocketConfig.java
+/home/local/LABINFO/2099340/Desktop/REDIS_Exercise_Hangman_Backend/src/main/java/edu/eci/arsw/msgbroker/services/InMemoryGamesStatePersistence.java
