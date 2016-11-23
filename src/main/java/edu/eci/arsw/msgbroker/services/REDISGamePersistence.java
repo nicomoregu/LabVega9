@@ -20,11 +20,12 @@ import redis.clients.jedis.Jedis;
  * @author 2099340
  */
 @Service
-public class REDISGamePersistence {
+public class REDISGamePersistence implements GameStatePersistence{
     @Autowired
     GameStatePersistence persistence;
     
-    public HangmanGame getGame(int gameid) throws Exception{
+    @Override
+    public HangmanGame getGame(int gameid) {
         Jedis jedis = JedisUtil.getPool().getResource();        
         Map<String, String> partida = jedis.hgetAll("partida:" + gameid);        
         HangmanGame resp = new HangmanGame(partida.get("palabra"), partida.get("adivinado"), partida.get("ganador"), partida.get("estado").equals("true")?true:false);
@@ -51,6 +52,7 @@ public class REDISGamePersistence {
         }
     }
     
+    @Override
     public  synchronized boolean checkWordAndUpdateHangman(int gameid, String player,String word) throws GameNotFoundException {
         Jedis jedis = JedisUtil.getPool().getResource(); 
         boolean resp = false;
@@ -78,5 +80,10 @@ public class REDISGamePersistence {
         
         return resp;
     
+    }
+
+    @Override
+    public void createGame(int id, String word) throws GameCreationException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

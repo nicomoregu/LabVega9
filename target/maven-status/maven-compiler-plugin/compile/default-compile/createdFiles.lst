@@ -8,4 +8,3 @@ edu/eci/arsw/msgbroker/services/GameNotFoundException.class
 edu/eci/arsw/msgbroker/GamesResourceController.class
 edu/eci/arsw/msgbroker/services/GameCreationException.class
 edu/eci/arsw/msgbroker/WebSocketConfig.class
-.netbeans_automatic_build
